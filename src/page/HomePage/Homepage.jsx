@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import css from "./Homepage.module.css";
+import { Link } from "react-router-dom";
 const Homepage = () => {
   return (
     <>
@@ -12,9 +13,10 @@ const Homepage = () => {
         <h2 className={css.downtext}>
           You can find everything you want in our catalog
         </h2>
-        <button type="button" className={css.button}>
+
+        <Link to="/catalog" className={css.button}>
           View Now
-        </button>
+        </Link>
       </div>
     </>
   );

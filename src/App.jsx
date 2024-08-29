@@ -7,6 +7,7 @@ import Homepage from ".//page/HomePage/Homepage.jsx";
 import CatalogPage from "./page/CatalogPage/CatalogPage.jsx";
 import DetailPage from "./page/DetailPage/DetailPage.jsx";
 import NotFoundPage from "./page/NotFoundPage/NotFound.jsx";
+import FavoritePage from "./page/FavoritePage/FavoritePage.jsx";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/" element={<Homepage />}></Route>
             <Route path="/catalog" element={<CatalogPage />}></Route>
             <Route path="/catalog/:id" element={<DetailPage />} />
+            <Route path="/favorite" element={<FavoritePage />} />
             <Route path="*" element={<NotFoundPage />}></Route>
           </Routes>
         </Suspense>

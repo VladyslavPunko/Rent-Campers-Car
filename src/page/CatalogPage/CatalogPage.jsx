@@ -1,5 +1,14 @@
+import { Helmet } from "react-helmet";
+
 const CatalogPage = () => {
-  return <div></div>;
+  return (
+    <div>
+      <Helmet>
+        <title>Catalog</title>
+        <meta name="description" content="Helmet application" />
+      </Helmet>
+    </div>
+  );
 };
 
 export default CatalogPage;

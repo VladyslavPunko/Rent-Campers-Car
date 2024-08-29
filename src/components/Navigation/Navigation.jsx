@@ -19,7 +19,7 @@ const Navigation = () => {
             Catalog
           </NavLink>
           <NavLink to="/favorite" className={activeLinks}>
-            Faworite
+            Favorite
           </NavLink>
         </div>
       </nav>

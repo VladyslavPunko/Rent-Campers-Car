@@ -3,6 +3,7 @@
   height: 88px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 40px;
 }
 
 .label {

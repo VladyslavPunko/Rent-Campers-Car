@@ -1,13 +1,15 @@
 import { Helmet } from "react-helmet";
 import css from "./Homepage.module.css";
 import { Link } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 const Homepage = () => {
   return (
     <>
-      <Helmet>
-        <title>Home Page</title>
-        <meta name="description" content="Helmet application" />
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <title>Home Page</title>
+        </Helmet>
+      </HelmetProvider>
       <div className={css.container}>
         <h1 className={css.uptext}>Campers of your dreams</h1>
         <h2 className={css.downtext}>

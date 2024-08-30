@@ -168,6 +168,7 @@ const Filters = () => {
           </label>
         </li>
       </ul>
+      <button className={css.button}>Search</button>
     </div>
   );
 };

@@ -4,4 +4,6 @@
   margin: 0 auto;
   padding: 48px 64px 52px;
   border: 1px solid black;
+  display: flex;
+  gap: 64px;
 }

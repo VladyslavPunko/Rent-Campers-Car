@@ -1,15 +1,13 @@
 import axios from "axios";
 
-export const fetchCampers = async () => {
-  const options = {
-    method: "GET",
-    url: "https://66b1f8e71ca8ad33d4f5f63e.mockapi.io/campers",
+axios.defaults.baseURL = "https://66b1f8e71ca8ad33d4f5f63e.mockapi.io";
 
-    headers: {
-      accept: "application/json",
-    },
-  };
-
-  const { data } = await axios.request(options);
-  return data;
+export const getTracks = async () => {
+  try {
+    const response = await axios.get("/campers");
+    console.log(response);
+    return response.data.items;
+  } catch (error) {
+    console.log(error);
+  }
 };

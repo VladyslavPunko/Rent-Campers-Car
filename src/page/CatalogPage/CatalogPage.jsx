@@ -4,7 +4,6 @@ import InputSearch from "../../components/InputSearch/InputSearch.jsx";
 import Filters from "../../components/Filters/Filters.jsx";
 import CampList from "../../components/CampList/CampList.jsx";
 import css from "./CatalogPage.module.css";
-import LoadMore from "../../components/LoadMore/LoadMore.jsx";
 
 const CatalogPage = () => {
   return (
@@ -20,7 +19,6 @@ const CatalogPage = () => {
       </div>
       <div className={css.divider}>
         <CampList />
-        <LoadMore className={css.loadMore} />
       </div>
     </div>
   );

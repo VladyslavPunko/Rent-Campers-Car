@@ -10,8 +10,6 @@ const CampList = () => {
     const fetchData = async () => {
       try {
         const response = await getTracks();
-        console.log("Full response:", response);
-
         setCamps(response);
       } catch (error) {
         console.error("Error:", error);

@@ -1,0 +1,18 @@
+.button {
+  width: 145px;
+  padding: 16px 32px;
+  background-color: transparent;
+  border-radius: 200px;
+  border: 1px solid #dadde1;
+  color: #101828;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  margin-top: 40px;
+  display: block;
+  margin: 40px auto 0;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  background-color: #d63c3c;
+  color: rgb(255, 255, 255);
+}
